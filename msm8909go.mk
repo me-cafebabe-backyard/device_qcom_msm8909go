@@ -69,11 +69,12 @@ PRODUCT_COPY_FILES += \
     device/qcom/msm8909go/seccomp/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.vidc.disable.split.mode=1
+    vendor.vidc.disable.split.mode=1 \
+    vendor.mediacodec.binder.size=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
        persist.radio.multisim.config=ssss \
-       persist.cne.override.memlimit=1
+       persist.vendor.cne.override.memlimit=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
        dalvik.vm.heapminfree=6m \
@@ -108,7 +109,6 @@ PRODUCT_PACKAGES += libGLES_android
 # Audio configuration file
 -include $(TOPDIR)hardware/qcom/audio/configs/msm8909/msm8909.mk
 
-PRODUCT_BOOT_JARS += qcom.fmradio
 
 PRODUCT_BOOT_JARS += tcmiface
 #PRODUCT_BOOT_JARS += qcmediaplayer
@@ -128,6 +128,10 @@ endif
 # Listen configuration file
 PRODUCT_COPY_FILES += \
     device/qcom/msm8909go/listen_platform_info.xml:system/etc/listen_platform_info.xml
+
+#VB xml
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.verified_boot.xml:system/etc/permissions/android.software.verified_boot.xml
 
 # Feature definition files for msm8909go
 PRODUCT_COPY_FILES += \
