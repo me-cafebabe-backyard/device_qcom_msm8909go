@@ -225,3 +225,7 @@ persist.bt.enable.splita2dp=false
 
 #Enable userspace LMK
 ro.lmk.enable_userspace_lmk=true
+
+#system prop for Bluetooth SOC type
+ro.bluetooth.library_name=libbluetooth_qti.so
+persist.vendor.btstack.enable.splita2dp=false
