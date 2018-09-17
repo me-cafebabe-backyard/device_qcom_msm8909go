@@ -278,7 +278,7 @@ PRODUCT_PACKAGES_DEBUG += bootctl
 endif
 
 # Add soft home, back and multitask keys
-PRODUCT_PROPERTY_OVERRIDES += qemu.hw.mainkeys=0
+PRODUCT_PROPERTY_OVERRIDES += qemu.hw.mainkeys=1
 PRODUCT_PROPERTY_OVERRIDES += rild.libpath=/vendor/lib/libril-qc-qmi-1.so
 
 SDM660_DISABLE_MODULE := true
