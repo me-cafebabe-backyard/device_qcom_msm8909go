@@ -86,7 +86,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
        dalvik.vm.heapmaxfree=8m \
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sdm.support_writeback=0
+    vendor.display.support_writeback=0
+
 
 $(call inherit-product, device/qcom/common/common.mk)
 
@@ -101,6 +102,9 @@ ifneq (,$(strip $(wildcard $(PRODUCT_RENDERING_ENGINE_REVLIB))))
 #   MULTI_LANG_ZAWGYI := REVERIE
 endif
 
+ifneq ($(TARGET_HAS_LOW_RAM),true)
+DEVICE_FRAMEWORK_MANIFEST_FILE := device/qcom/msm8909go/framework_manifest.xml
+endif
 DEVICE_MANIFEST_FILE := device/qcom/msm8909go/manifest.xml
 DEVICE_MATRIX_FILE   := device/qcom/common/compatibility_matrix.xml
 
