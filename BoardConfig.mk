@@ -197,6 +197,9 @@ FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 # Control flag between KM versions
 TARGET_HW_KEYMASTER_V03 := true
 
+#control flag for enablement of 3MB secure app region
+TARGET_SUPPORT_3MB_SECURE_APP_REGION := true
+
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.msm
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
