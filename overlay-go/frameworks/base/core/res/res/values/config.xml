@@ -40,7 +40,13 @@
    <!-- Boolean indicating whether or not wifi firmware debugging is enabled -->
    <bool translatable="false" name="config_wifi_enable_wifi_firmware_debugging">false</bool>
 
-   <!-- Enable WPA3 support -->
+   <!-- Enable ACS (auto channel selection) for Wifi hotspot (SAP) -->
+   <bool translatable="false" name="config_wifi_softap_acs_supported">false</bool>
+
+   <!-- Enable 802.11ac for Wifi hotspot (SAP) -->
+   <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">false</bool>
+
+   <!-- Device supports WPA3 -->
    <bool translatable="false" name="config_wifi_wpa3_supported">false</bool>
 </resources>
 
