@@ -230,7 +230,7 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-service \
 
 # Defined the locales
-PRODUCT_LOCALES := en_US
+PRODUCT_LOCALES := en_US ru_RU zh_CN zh_HK zh_TW
 
 # When can normal compile this module,  need module owner enable below commands
 # Add the overlay path
