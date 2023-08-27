@@ -78,7 +78,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.mediacodec.binder.size=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
-       persist.radio.multisim.config=ssss \
+       persist.radio.multisim.config=dsds \
        persist.vendor.cne.override.memlimit=1
 
 PRODUCT_PROPERTY_OVERRIDES += \
