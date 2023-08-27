@@ -14,10 +14,11 @@ endif #TARGET_USES_QCOM_BSP
 #For targets which donot support vulkan
 TARGET_NOT_SUPPORT_VULKAN :=true
 
+TARGET_USES_NQ_NFC := false
+
 ifeq ($(TARGET_USES_AOSP),true)
 TARGET_USES_QTIC := false
 else
-TARGET_USES_NQ_NFC := true
 TARGET_USES_QTIC := true
 -include $(QCPATH)/common/config/qtic-config.mk
 endif
