@@ -302,3 +302,7 @@ ENABLE_EXTRA_VENDOR_LIBS := true
 PRODUCT_PACKAGES += vendor-extra-libs
 
 TARGET_MOUNT_POINTS_SYMLINKS := false
+
+# Coolpad 5360
+PRODUCT_PACKAGES += \
+    msg2xxx.kl
