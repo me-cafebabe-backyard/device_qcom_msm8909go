@@ -102,7 +102,6 @@ BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 BOARD_PERSISTIMAGE_FILE_SYSTEM_TYPE := ext4
 
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.memcg=true earlyprintk firmware_class.path=/vendor/firmware_mnt/image
-BOARD_KERNEL_CMDLINE += root=/dev/mmcblk0p21 skip_initramfs rootwait ro init=/init
 
 BOARD_EGL_CFG := device/qcom/msm8909go/egl.cfg
 
@@ -123,7 +122,7 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_msm
 # Enable System As Root even for non-A/B from P onwards
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 endif
 
 ifeq ($(ENABLE_AB), true)
