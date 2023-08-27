@@ -240,3 +240,6 @@ persist.vendor.btstack.enable.splita2dp=false
 # network location provider is not functional
 ro.location.osnlp.package=com.google.android.gms
 ro.location.osnlp.region.package=
+
+# Coolpad 5360
+ro.sf.lcd_density=280
