@@ -166,7 +166,7 @@ TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 
 #Add support for firmare upgrade on msm8909go
-HAVE_SYNAPTICS_I2C_RMI4_FW_UPGRADE := true
+HAVE_SYNAPTICS_I2C_RMI4_FW_UPGRADE := false
 
 #Enable peripheral manager
 TARGET_PER_MGR_ENABLED := true
