@@ -25,9 +25,9 @@ endif
 DEVICE_PACKAGE_OVERLAYS := device/qcom/msm8909go/overlay-go
 
 # Default vendor configuration.
-ifeq ($(ENABLE_VENDOR_IMAGE),)
-ENABLE_VENDOR_IMAGE := true
-endif
+#ifeq ($(ENABLE_VENDOR_IMAGE),)
+#ENABLE_VENDOR_IMAGE := true
+#endif
 
 # Disable QTIC until it's brought up in split system/vendor
 # configuration to avoid compilation breakage.
@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
     fs_config_files
 
 # Default A/B configuration.
-ENABLE_AB ?= false
+ENABLE_AB := false
 
 # Enable features in video HAL that can compile only on this platform
 TARGET_USES_MEDIA_EXTENSIONS := true
