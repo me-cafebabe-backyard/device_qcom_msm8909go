@@ -294,3 +294,6 @@ TARGET_MOUNT_POINTS_SYMLINKS := false
 # Coolpad 5360
 PRODUCT_PACKAGES += \
     msg2xxx.kl
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,device/qcom/msm8909go/stock-files/vendor/,$(TARGET_COPY_OUT_VENDOR)/)
