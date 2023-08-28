@@ -254,9 +254,9 @@ PRODUCT_PACKAGES += \
     android.hardware.power@1.0-impl
 
 #Enable QTI KEYMASTER and GATEKEEPER HIDLs
-ifeq ($(ENABLE_VENDOR_IMAGE), true)
-KMGK_USE_QTI_SERVICE := true
-endif
+#ifeq ($(ENABLE_VENDOR_IMAGE), true)
+#KMGK_USE_QTI_SERVICE := true
+#endif
 
 #Enable AOSP KEYMASTER and GATEKEEPER HIDLs
 ifneq ($(KMGK_USE_QTI_SERVICE), true)
