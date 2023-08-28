@@ -246,7 +246,7 @@ PRODUCT_PACKAGES += android.hardware.health@2.0-impl \
                     android.hardware.health@2.0-service \
                     libhealthd.msm
 #Supports verity
-PRODUCT_SUPPORTS_VERITY := true
+#PRODUCT_SUPPORTS_VERITY := true
 
 # Power
 PRODUCT_PACKAGES += \
