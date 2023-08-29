@@ -1,0 +1,9 @@
+- LNX.LA.3.7.1.1-07710-8x09.0 tag is the closest to stock kernel dts
+- Needs to revert commit 88a0aca809513958d3c338c8d48d76d8d4789cb6 in hardware/interfaces
+- Delete qti keystore impl
+- To include dt.img in boot.img, pick:
+  https://github.com/LineageOS/android_build/commit/d01c6cb0b6d7192f569d1cde5552485050de9378
+  https://github.com/LineageOS/android_system_core/commit/e0c0b8711bbfb72ad0827a08db9dc7183a418cd8
+  and remove verity.mk inclusion from device/qcom/common
+- `for i in b00 b01 b02 b03 mdt ; do cp keymaste.${i} keymaster.${i} ; done`
+- Loading modem fw, probing wlan driver, and loading camera daemon/hal currently crashes the device
